@@ -7,19 +7,23 @@ import {
   Clapperboard,
   LayoutDashboard,
   Mail, 
-  Phone
+  Phone,
+  TabletSmartphone,
+  Container,
+  DatabaseBackup,
+  Bot
 } from "lucide-react"
 
 const selectedWorks = [
   {
-    title: "UAssist On Board Unit",
+    title: "Unified Hauling Assignment Management System (UAssist)",
     year: "2024 - 2025",
-    image: "/sample.jpg",
+    image: "/code/uassist.png",
   },
   {
     title: "Fleet Management System (FAMOUS)",
     year: "2024 - 2025",
-    image: "/sample.jpg",
+    image: "/code/fms.png",
   },
 ]
 
@@ -60,7 +64,7 @@ export default function Overview() {
         <header className="pb-4 flex items-center justify-between">
           <h2 className="text-2xl font-bold">Selected Work</h2>
           <Link
-            href="/projects"
+            href="/code"
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary underline-offset-4 hover:underline px-6 h-auto py-1"
           >
             View All
@@ -142,6 +146,42 @@ export default function Overview() {
             </span>
             <div className="flex-1">
               <span>Animate</span>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <span className="flex items-center justify-center flex-shrink-0 border border-primary/30 rounded-full bg-[#f2f0e7] size-12">
+              <TabletSmartphone className="size-6" />
+            </span>
+            <div className="flex-1">
+              <span>Mobile Development</span>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <span className="flex items-center justify-center flex-shrink-0 border border-primary/30 rounded-full bg-[#f2f0e7] size-12">
+              <Container className="size-6" />
+            </span>
+            <div className="flex-1">
+              <span>DevOps</span>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <span className="flex items-center justify-center flex-shrink-0 border border-primary/30 rounded-full bg-[#f2f0e7] size-12">
+              <DatabaseBackup className="size-6" />
+            </span>
+            <div className="flex-1">
+              <span>Data Analyst</span>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <span className="flex items-center justify-center flex-shrink-0 border border-primary/30 rounded-full bg-[#f2f0e7] size-12">
+              <Bot className="size-6" />
+            </span>
+            <div className="flex-1">
+              <span>AI</span>
             </div>
           </div>
         </div>
