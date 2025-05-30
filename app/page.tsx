@@ -19,11 +19,13 @@ const selectedWorks = [
     title: "Unified Hauling Assignment Management System (UAssist)",
     year: "2024 - 2025",
     image: "/code/uassist.png",
+    url: "/code/uassist"
   },
   {
     title: "Fleet Management System (FAMOUS)",
     year: "2024 - 2025",
     image: "/code/fms.png",
+    url: "/code/famous"
   },
 ]
 
@@ -88,7 +90,7 @@ export default function Overview() {
         <div className="grid lg:grid-cols-2 gap-6">
           {selectedWorks.map((work) => (
             <Link
-              href={`/projects/${work.title.toLowerCase().replace(/\s+/g, "-")}`}
+              href={work.url}
               key={work.title}
               className="block space-y-4"
             >

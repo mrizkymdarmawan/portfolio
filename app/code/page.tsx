@@ -9,16 +9,19 @@ const codes = [
     title: "Unified Hauling Assignment Management System (UAssist)",
     year: "2024 - 2025",
     image: "/code/uassist.png",
+    url: "/code/uassist"
   },
   {
     title: "Fleet Management System (FAMOUS)",
     year: "2024 - 2025",
     image: "/code/fms.png",
+    url: "/code/famous"
   },
   {
     title: "Electronic Office (E - Office)",
     year: "2024 - 2025",
     image: "/code/eoffice.png",
+    url: "/code/eoffice"
   },
 ]
 
@@ -32,7 +35,7 @@ export default function Code() {
         <div className="grid lg:grid-cols-2 gap-6">
           {codes.map((work) => (
             <Link
-              href={`/projects/${work.title.toLowerCase().replace(/\s+/g, "-")}`}
+              href={work.url}
               key={work.title}
               className="block space-y-4"
             >
