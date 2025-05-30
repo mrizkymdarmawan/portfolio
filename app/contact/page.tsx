@@ -42,7 +42,7 @@ export default function Contact() {
 
           <div className="mt-8 flex justify-start lg:justify-start">
             <a
-              href="https://cal.com/"
+              href="https://wa.me/6285186062667"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border-input border-2 bg-background hover:bg-accent hover:text-accent-foreground h-12 px-6 py-2 w-full lg:w-auto max-w-xs"

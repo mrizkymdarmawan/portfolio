@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link"
 import {
   Copy, 
@@ -13,6 +15,7 @@ import {
   DatabaseBackup,
   Bot
 } from "lucide-react"
+import { useState } from "react";
 
 const selectedWorks = [
   {
@@ -30,6 +33,16 @@ const selectedWorks = [
 ]
 
 export default function Overview() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = () => {
+    const email = "mrizkymdarmawan@gmail.com";
+    navigator.clipboard.writeText(email).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+
   return (
     <section id="overview" className="max-w-5xl">
       <div className="space-y-4 mb-12">
@@ -54,10 +67,11 @@ export default function Overview() {
             About
           </Link>
           <button
+            onClick={handleCopyEmail}
             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-12 px-6 py-2"
           >
             <Copy />
-            Copy mail
+            {copied ? "Copied!" : "Copy mail"}
           </button>
         </div>
       </div>
@@ -225,7 +239,7 @@ export default function Overview() {
 
           <div className="mt-8 flex justify-start lg:justify-start">
             <a
-              href="https://cal.com/"
+              href="https://wa.me/6285186062667"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border-input border-2 bg-background hover:bg-accent hover:text-accent-foreground h-12 px-6 py-2 w-full lg:w-auto max-w-xs"
