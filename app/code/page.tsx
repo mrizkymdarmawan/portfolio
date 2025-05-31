@@ -14,7 +14,7 @@ const codes = [
   {
     title: "Fleet Management System (FAMOUS)",
     year: "2024 - 2025",
-    image: "/code/fms.png",
+    image: "/code/famous.png",
     url: "/code/famous"
   },
   {
@@ -22,6 +22,36 @@ const codes = [
     year: "2024 - 2025",
     image: "/code/eoffice.png",
     url: "/code/eoffice"
+  },
+  {
+    title: "SPPAY",
+    year: "2023",
+    image: "/code/sppay.png",
+    url: "/code/sppay"
+  },
+  {
+    title: "Solusi Wangsa Niaga (SOWAN)",
+    year: "2022",
+    image: "/code/sowan.png",
+    url: "/code/sowan"
+  },
+  {
+    title: "In Clinic (Integrated Clinic)",
+    year: "2022",
+    image: "/code/inclinic.png",
+    url: "/code/inclinic"
+  },
+  {
+    title: "Mood Prima",
+    year: "2021",
+    image: "/code/moodprima.png",
+    url: "/code/moodprima"
+  },
+  {
+    title: "Al Qodiri Mineral Water",
+    year: "2020",
+    image: "/code/alqodiri.png",
+    url: "/code/alqodiri"
   },
 ]
 

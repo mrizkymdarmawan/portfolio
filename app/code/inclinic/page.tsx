@@ -1,7 +1,7 @@
-export default function Famous() {
+export default function InClinic() {
     return (
         <img 
-            src="/code/famous.png" 
+            src="/code/inclinic.png" 
             alt="Famous" 
             style={{
                 width: '100%',

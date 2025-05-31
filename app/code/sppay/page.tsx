@@ -1,7 +1,7 @@
-export default function Famous() {
+export default function Sppay() {
     return (
         <img 
-            src="/code/famous.png" 
+            src="/code/sppay.png" 
             alt="Famous" 
             style={{
                 width: '100%',

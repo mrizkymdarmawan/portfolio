@@ -1,7 +1,7 @@
-export default function Famous() {
+export default function Sowan() {
     return (
         <img 
-            src="/code/famous.png" 
+            src="/code/sowan.png" 
             alt="Famous" 
             style={{
                 width: '100%',

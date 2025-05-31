@@ -1,7 +1,7 @@
-export default function Famous() {
+export default function MoodPrima() {
     return (
         <img 
-            src="/code/famous.png" 
+            src="/code/moodprima.png" 
             alt="Famous" 
             style={{
                 width: '100%',

@@ -27,7 +27,7 @@ const selectedWorks = [
   {
     title: "Fleet Management System (FAMOUS)",
     year: "2024 - 2025",
-    image: "/code/fms.png",
+    image: "/code/famous.png",
     url: "/code/famous"
   },
 ]

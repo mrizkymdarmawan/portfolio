@@ -1,7 +1,7 @@
-export default function Famous() {
+export default function AlQodiri() {
     return (
         <img 
-            src="/code/famous.png" 
+            src="/code/alqodiri.png" 
             alt="Famous" 
             style={{
                 width: '100%',
